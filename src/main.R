@@ -8,7 +8,7 @@ set.seed(123)
 
 
 main <- function() {
-  train <- fread("data/train.csv")[1:100,-"id"]
+  train <- fread("data/train.csv")[,-"id"]
   target_col <- "Price"
   
   data <- preprocess_data(train)
